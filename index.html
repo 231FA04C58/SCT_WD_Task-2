@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Stopwatch Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STOPWATCH WEB APPLICATION</h1> 
+
+    <div class="main-content-wrapper"> 
+        <div class="lap-times-container">
+            <h2>Lap Times</h2>
+            <ul id="lapList">
+            </ul>
+            <button id="exportLapsButton" class="action-button">Export Laps</button>
+        </div>
+
+        <div class="watch-and-toggle-wrapper"> 
+            <div class="watch-shell"> 
+                <div class="watch-face"> 
+                    <h1>STOP WATCH</h1>
+                    <div class="datetime-display">
+                        <span id="currentDate"></span>
+                        <span id="currentTime"></span>
+                    </div>
+                    <div class="display" id="stopwatchDisplay"> 
+                        <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="startButton" class="watch-button button-top-right">Start</button>
+                    <button id="pauseButton" class="watch-button button-bottom-left">Pause</button>
+                    <button id="resetButton" class="watch-button button-bottom-right">Reset</button>
+                    <button id="lapButton" class="watch-button button-top-left">Lap</button>
+                </div>
+            </div>
+
+            <div class="mood-toggle-container">
+                <button id="moodToggleButton"> Light/Dark Mode</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

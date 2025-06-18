@@ -1,0 +1,573 @@
+/* --- CSS Variables for Theming --- */
+:root { /* Default (Dark) Mode Variables */
+    --body-bg-gradient-1: #1a1a1a;
+    --body-bg-gradient-2: #333333;
+    --body-text-color: #e0e0e0;
+
+    --watch-shell-bg-gradient-1: #5c5c5c;
+    --watch-shell-bg-gradient-2: #2a2a2a;
+    --watch-shell-border-color: #4a4a4a;
+    --watch-shell-shadow-color: rgba(0, 0, 0, 0.7);
+    --watch-shell-inner-highlight: rgba(255, 255, 255, 0.1);
+    --watch-shell-inner-depth: rgba(0, 0, 0, 0.5);
+    --watch-shell-glow-color: rgba(0, 255, 255, 0.4);
+
+    --watch-face-bg-color: #000000;
+    --watch-face-shadow-color: rgba(0, 0, 0, 0.8);
+    --watch-face-glow-color: rgba(0, 255, 255, 0.2);
+
+    --h1-color: #00ffff;
+    --h1-text-shadow: rgba(0, 255, 255, 0.5);
+
+    --display-font-color: #00ff00; /* Green digits */
+    --display-bg-color: rgba(0, 0, 0, 0.7);
+    --display-inner-shadow: rgba(0, 255, 0, 0.3);
+    --display-border-color: rgba(0, 255, 0, 0.2);
+
+    --button-bg-gradient-1: #777;
+    --button-bg-gradient-2: #555;
+    --button-border-color: #444;
+    --button-text-color: #e0e0e0;
+    --button-shadow-color: rgba(0, 0, 0, 0.4);
+    --button-text-shadow-color: rgba(0, 0, 0, 0.5);
+    --button-active-indicator-color: #00ff00; /* This variable is now unused for button glow */
+
+    --lap-container-bg-color: #2a2a2a;
+    --lap-container-shadow-color: rgba(0, 0, 0, 0.4);
+    --lap-container-border-color: #444;
+    --lap-h2-color: #00ffff;
+    --lap-h2-text-shadow: rgba(0, 255, 255, 0.3);
+
+    --lap-list-bg-color: #1a1a1a;
+    --lap-list-border-color: #444;
+    --lap-list-li-border-color: #333;
+    --lap-list-li-text-color: #c0c0c0;
+    --lap-list-li-hover-bg: #222222;
+    --lap-list-span-color: #00ff00; /* Green for lap number and time */
+
+    --scrollbar-track-color: #1a1a1a;
+    --scrollbar-thumb-color: #5c5c5c;
+    --scrollbar-thumb-hover-color: #777777;
+
+    /* Mood Toggle Button specific colors */
+    --mood-button-bg: #555;
+    --mood-button-color: #eee;
+    --mood-button-border: #444;
+    --mood-button-hover-bg: #666;
+    --mood-button-active-bg: #333;
+
+    /* Date/Time Display colors */
+    --datetime-color: #00e0e0; /* Aqua-ish */
+    --datetime-shadow: rgba(0, 255, 255, 0.3);
+
+    /* Action Button (Export Laps) colors */
+    --action-button-bg: #008800; /* Greenish */
+    --action-button-hover-bg: #00aa00;
+    --action-button-active-bg: #006600;
+    --action-button-color: #ffffff;
+    --action-button-border: #005500;
+}
+
+/* Light Mode Variables - Overrides the default ones */
+body.light-mode {
+    --body-bg-gradient-1: #f0f8ff; /* AliceBlue */
+    --body-bg-gradient-2: #e0f7fa; /* LightCyan */
+    --body-text-color: #333333;
+
+    --watch-shell-bg-gradient-1: #e0e0e0;
+    --watch-shell-bg-gradient-2: #ffffff;
+    --watch-shell-border-color: #c0c0c0;
+    --watch-shell-shadow-color: rgba(0, 0, 0, 0.2);
+    --watch-shell-inner-highlight: rgba(0, 0, 0, 0.05);
+    --watch-shell-inner-depth: rgba(255, 255, 255, 0.5);
+    --watch-shell-glow-color: rgba(0, 150, 150, 0.2);
+
+    --watch-face-bg-color: #ffffff;
+    --watch-face-shadow-color: rgba(0, 0, 0, 0.1);
+    --watch-face-glow-color: rgba(0, 150, 150, 0.1);
+
+    --h1-color: #008888; /* Darker Aqua */
+    --h1-text-shadow: rgba(0, 150, 150, 0.2);
+
+    --display-font-color: #007bff; /* Blue digits */
+    --display-bg-color: #eef7ff;
+    --display-inner-shadow: rgba(0, 123, 255, 0.2);
+    --display-border-color: rgba(0, 123, 255, 0.1);
+
+    --button-bg-gradient-1: #bbb;
+    --button-bg-gradient-2: #ddd;
+    --button-border-color: #aaa;
+    --button-text-color: #333;
+    --button-shadow-color: rgba(0, 0, 0, 0.2);
+    --button-text-shadow-color: rgba(255, 255, 255, 0.5);
+    --button-active-indicator-color: #007bff; /* This variable is now unused for button glow */
+
+
+    --lap-container-bg-color: #f0f0f0;
+    --lap-container-shadow-color: rgba(0, 0, 0, 0.15);
+    --lap-container-border-color: #d0d0d0;
+    --lap-h2-color: #008888;
+    --lap-h2-text-shadow: rgba(0, 150, 150, 0.1);
+
+    --lap-list-bg-color: #ffffff;
+    --lap-list-border-color: #d0d0d0;
+    --lap-list-li-border-color: #e0e0e0;
+    --lap-list-li-text-color: #555555;
+    --lap-list-li-hover-bg: #f5f5f5;
+    --lap-list-span-color: #007bff; /* Blue for lap number and time */
+
+    --scrollbar-track-color: #f0f0f0;
+    --scrollbar-thumb-color: #cccccc;
+    --scrollbar-thumb-hover-color: #aaaaaa;
+
+    /* Mood Toggle Button specific colors in light mode */
+    --mood-button-bg: #ccc;
+    --mood-button-color: #333;
+    --mood-button-border: #bbb;
+    --mood-button-hover-bg: #bbb;
+    --mood-button-active-bg: #eee;
+
+    /* Date/Time Display colors */
+    --datetime-color: #0056b3; /* Darker blue */
+    --datetime-shadow: rgba(0, 123, 255, 0.2);
+
+    /* Action Button (Export Laps) colors in light mode */
+    --action-button-bg: #28a745; /* Bootstrap success green */
+    --action-button-hover-bg: #218838;
+    --action-button-active-bg: #1e7e34;
+    --action-button-color: #ffffff;
+    --action-button-border: #1c7430;
+}
+
+
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Default to column for smaller screens and overall stacking */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--body-bg-gradient-1), var(--body-bg-gradient-2), var(--body-bg-gradient-1));
+    color: var(--body-text-color);
+    gap: 30px; /* Adjusted gap for vertical stacking */
+    overflow: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* New H1 for APPLICATION title */
+body > h1 { /* Targets the direct H1 child of body */
+    color: var(--h1-color);
+    font-size: 2.5em;
+    text-shadow: 0 0 8px var(--h1-text-shadow);
+    margin-bottom: 20px; /* Space below the main title */
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Main content wrapper to control side-by-side layout */
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Default to column stacking for mobile */
+    align-items: center;
+    gap: 50px; /* Space between the watch and lap history/mood toggle */
+    width: 100%; /* Ensure it takes full width to manage children */
+    max-width: 900px; /* Limit overall width for larger screens */
+}
+
+/* Container for watch and mood toggle when side-by-side */
+.watch-and-toggle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between watch and mood toggle */
+}
+
+
+/* Media query for larger screens to enable side-by-side layout */
+@media (min-width: 900px) {
+    .main-content-wrapper {
+        flex-direction: row; /* Arrange lap history and watch side-by-side */
+        justify-content: center; /* Center the entire row horizontally */
+        align-items: flex-start; /* Align items to the top (lap history and watch) */
+    }
+
+    .lap-times-container {
+        /* No specific order needed now that main-content-wrapper is row and order is default */
+        margin-top: 0; /* Remove top margin when beside watch */
+        margin-right: 50px; /* Add space between lap list and watch */
+    }
+}
+
+
+/* Watch Shell (Outer body/bezel) */
+.watch-shell {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--watch-shell-bg-gradient-1), var(--watch-shell-bg-gradient-2), var(--watch-shell-bg-gradient-1));
+    border-radius: 50%;
+    box-shadow: 0 10px 30px var(--watch-shell-shadow-color),
+                inset 0 0 20px var(--watch-shell-inner-highlight),
+                inset 0 0 50px var(--watch-shell-inner-depth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; Removed specific margin, let gap handle it */
+    border: 5px solid var(--watch-shell-border-color);
+    transition: background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+    animation: pulse-glow 3s infinite alternate ease-in-out;
+}
+
+/* Keyframes for watch-shell glow */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 10px 30px var(--watch-shell-shadow-color),
+                    inset 0 0 20px var(--watch-shell-inner-highlight),
+                    inset 0 0 50px var(--watch-shell-inner-depth);
+    }
+    100% {
+        box-shadow: 0 10px 40px var(--watch-shell-shadow-color),
+                    0 0 25px var(--watch-shell-glow-color),
+                    inset 0 0 20px var(--watch-shell-inner-highlight),
+                    inset 0 0 50px var(--watch-shell-inner-depth);
+    }
+}
+
+
+/* Watch Face (Inner display area) */
+.watch-face {
+    width: 350px;
+    height: 350px;
+    background-color: var(--watch-face-bg-color);
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px var(--watch-face-shadow-color),
+                0 0 10px var(--watch-face-glow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    position: relative; /* Crucial for absolute positioning of hands */
+}
+
+
+.watch-face h1 { /* Specific styling for the stopwatch H1 */
+    color: var(--h1-color);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--h1-text-shadow);
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Date and Time Display Styling */
+.datetime-display {
+    font-family: 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--datetime-color);
+    text-shadow: 0 0 3px var(--datetime-shadow);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Stack date and time */
+    align-items: center;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+    position: relative; /* Ensure it stays above elements that might overlap */
+    z-index: 10;
+}
+
+.datetime-display span {
+    margin: 2px 0;
+}
+
+
+/* Digital Stopwatch Display Styling */
+.display {
+    font-family: 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--display-font-color);
+    background-color: var(--display-bg-color); /* Use variable for dynamic theming */
+    padding: 10px 15px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    box-shadow: inset 0 0 8px var(--display-inner-shadow);
+    border: 1px solid var(--display-border-color);
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+    position: relative; /* For scanline/glitch effects */
+    overflow: hidden;
+    width: 250px; /* Fixed width */
+    height: 80px; /* Fixed height for digital display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Keep it above other potential elements */
+}
+
+/* Scanline effect for the display (on digital part) */
+.display::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.3) 100%);
+    opacity: 0.2;
+    pointer-events: none;
+    animation: scanline 8s linear infinite;
+    border-radius: 5px;
+    z-index: 11; /* Above digital numbers */
+}
+
+/* Keyframes for scanline effect */
+@keyframes scanline {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+/* Glitch effect for the display (on digital part) */
+.display.glitch::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: glitch-animation 0.1s steps(2, end) infinite alternate;
+    pointer-events: none;
+    mix-blend-mode: overlay; /* To blend with existing display content */
+    z-index: 13; /* On top of everything else in display */
+}
+
+@keyframes glitch-animation {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(calc(var(--random-x, 0) * 1px), calc(var(--random-y, 0) * 1px));
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+
+/* Watch Buttons (Pushers) */
+.watch-button {
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    background: linear-gradient(to bottom, var(--button-bg-gradient-1), var(--button-bg-gradient-2));
+    border: 1px solid var(--button-border-color);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: var(--button-text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 3px 5px var(--button-shadow-color);
+    transition: all 0.1s ease, border-color 0.3s ease; /* Added border-color to transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 3px var(--button-text-shadow-color);
+}
+
+/* Specific positioning for each button */
+.button-top-left {
+    top: 40px;
+    left: 15px;
+    transform: rotate(-30deg);
+}
+.button-top-right {
+    top: 40px;
+    right: 15px;
+    transform: rotate(30deg);
+}
+.button-bottom-left {
+    bottom: 40px;
+    left: 15px;
+    transform: rotate(30deg);
+}
+.button-bottom-right {
+    bottom: 40px;
+    right: 15px;
+    transform: rotate(-30deg);
+}
+
+/* Button hover and active states */
+.watch-button:hover {
+    background: linear-gradient(to bottom, var(--button-bg-gradient-1), var(--button-bg-gradient-2));
+    box-shadow: 0 4px 8px var(--button-shadow-color), 0 0 10px var(--button-text-color); /* Added glow on hover */
+    filter: brightness(1.2);
+}
+.button-top-left:hover { transform: translateY(-2px) rotate(-30deg); }
+.button-top-right:hover { transform: translateY(-2px) rotate(30deg); }
+.button-bottom-left:hover { transform: translateY(-2px) rotate(30deg); }
+.button-bottom-right:hover { transform: translateY(-2px) rotate(-30deg); }
+
+.watch-button:active {
+    background: linear-gradient(to bottom, var(--button-bg-gradient-2), var(--button-bg-gradient-1));
+    transform: translateY(2px) rotate(var(--rotation, 0deg));
+    box-shadow: inset 0 2px 5px var(--button-shadow-color);
+    filter: brightness(0.8);
+}
+.button-top-left:active { transform: translateY(2px) rotate(-30deg); }
+.button-top-right:active { transform: translateY(2px) rotate(30deg); }
+.button-bottom-left:active { transform: translateY(2px) rotate(30deg); }
+.button-bottom-right:active { transform: translateY(2px) rotate(-30deg); }
+
+/* Mood Toggle Button Styling */
+.mood-toggle-container {
+    /* No margin-bottom needed as gap handles it now */
+}
+
+#moodToggleButton {
+    background-color: var(--mood-button-bg);
+    color: var(--mood-button-color);
+    border: 1px solid var(--mood-button-border);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+#moodToggleButton:hover {
+    background-color: var(--mood-button-hover-bg);
+}
+
+#moodToggleButton:active {
+    background-color: var(--mood-button-active-bg);
+    transform: translateY(1px);
+}
+
+
+/* Lap Times Container Styling (Outside the watch) */
+.lap-times-container {
+    background-color: var(--lap-container-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--lap-container-shadow-color);
+    text-align: center;
+    max-width: 380px;
+    width: 90%;
+    margin-top: 0;
+    transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+    display: flex; /* Added for button placement */
+    flex-direction: column; /* Added for button placement */
+    align-items: center; /* Added for button placement */
+    gap: 15px; /* Spacing between list and button */
+}
+
+.lap-times-container h2 {
+    color: var(--lap-h2-color);
+    margin-bottom: 0; /* Adjusted for gap */
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0 0 3px var(--lap-h2-text-shadow);
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Lap List Styling */
+#lapList {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid var(--lap-list-border-color);
+    border-radius: 5px;
+    background-color: var(--lap-list-bg-color);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    width: 100%; /* Make list take full width of container */
+    margin-bottom: 0; /* Adjusted for gap */
+}
+
+#lapList li {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--lap-list-li-border-color);
+    text-align: left;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--lap-list-li-text-color);
+    font-family: 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+    animation: slideInFromRight 0.3s ease-out;
+}
+
+/* Keyframes for lap list item entry animation */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#lapList li:last-child {
+    border-bottom: none;
+}
+
+#lapList li:hover {
+    background-color: var(--lap-list-li-hover-bg);
+}
+
+/* Styling for lap number and time within list item */
+#lapList li span:first-child {
+    font-weight: 600;
+    color: var(--lap-list-span-color);
+    transition: color 0.5s ease;
+}
+
+#lapList li span:last-child {
+    color: var(--lap-list-span-color);
+    transition: color 0.5s ease;
+}
+
+/* Scrollbar styling for lap list (Webkit browsers) */
+#lapList::-webkit-scrollbar { width: 8px; }
+#lapList::-webkit-scrollbar-track { background: var(--scrollbar-track-color); border-radius: 10px; }
+#lapList::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb-color); border-radius: 10px; }
+#lapList::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover-color); }
+
+/* General Action Button Style (for Export Laps) */
+.action-button {
+    background-color: var(--action-button-bg);
+    color: var(--action-button-color);
+    border: 1px solid var(--action-button-border);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:hover {
+    background-color: var(--action-button-hover-bg);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.action-button:active {
+    background-color: var(--action-button-active-bg);
+    transform: translateY(1px);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
